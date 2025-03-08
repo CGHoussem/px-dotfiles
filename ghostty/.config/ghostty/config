@@ -1,4 +1,2 @@
 theme = catppuccin-mocha
-
-keybind = ctrl+kp_subtract=decrease_font_size
-keybind = ctrl+kp_add=increase_font_size
+background-opacity = 0.9
