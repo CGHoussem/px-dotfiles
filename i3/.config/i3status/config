@@ -1,6 +1,6 @@
 general {
-        colors = true
-        interval = 5
+    colors = true
+    interval = 5
 }
 
 order += "wireless _first_"
@@ -22,52 +22,52 @@ volume master {
 }
 
 wireless _first_ {
-        format_up = "󰖩 (%quality at %essid) %ip"
-        format_down = "󰖩 down"
+    format_up = "󰖩 (%quality at %essid) %ip"
+    format_down = "󰖩 down"
 }
 
 ethernet _first_ {
-        format_up = "󰈀 %ip"
-        format_down = "󰈀 down"
+    format_up = "󰈀 %ip"
+    format_down = "󰈀 down"
 }
 
 battery all {
-        format = "%status %percentage %remaining"
-	status_chr= "󱊥"
-	status_bat= "󱊢"
-	status_unk= ""
-	status_full= "󱊣"
+    format = "%status %percentage %remaining"
+	status_chr= "󰂄"
+	status_bat= "󰁿"
+	status_unk= "󰂑"
+	status_full= "󰁹"
 	low_threshold=30
 	threshold_type="time"
 }
 
 disk "/" {
-        format = "󰋊 /: %used-%total"
-	low_threshold = 35
+    format = "󰋊 /: %used-%total"
+	low_threshold = 40
 }
 
 disk "/home" {
-        format = "󰋊 /home: %used-%total"
-	low_threshold = 20
+    format = "󰋊 /home: %used-%total"
+	low_threshold = 30
 }
 
 disk "/tmp" {
-        format = "󰋊 /tmp: %used-%total"
+    format = "󰋊 /tmp: %used-%total"
 	low_threshold = 30
 }
 
 memory {
-        format = "RAM: %used-%total"
-        threshold_degraded = "10%"
-        format_degraded = "Low RAM: %free"
+    format = "RAM: %used-%total"
+    threshold_degraded = "15%"
+    format_degraded = "Low RAM: %free"
 }
 
 cpu_usage {
 	format = "CPU: %usage"
-	max_threshold = 75
+	max_threshold = 85
 	format_above_threshold = "CPU above threshold: %usage"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M"
+    format = "%Y-%m-%d %H:%M"
 }
