@@ -9,7 +9,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 		-- Useful status updates for LSP.
-		{ "j-hui/fidget.nvim", opts = {} },
+		{ "j-hui/fidget.nvim",       opts = {} },
 
 		-- Allows extra capabilities provided by nvim-cmp
 		"hrsh7th/cmp-nvim-lsp",
@@ -236,7 +236,10 @@ return {
 			jsonls = {},
 			yamlls = {},
 			cmake = {},
-			clangd = {},
+			clangd = {
+				cmd = { "clangd", "--offset-encoding=utf-8" },
+			},
+			rust_analyzer = {},
 
 			lua_ls = {
 				-- cmd = { ... },
