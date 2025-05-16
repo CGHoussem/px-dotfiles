@@ -17,6 +17,7 @@ return {
 				"shfmt", -- Shell formatter
 				"checkmake", -- linter for Makefiles
 				"ruff", -- Python linter and formatter
+				"prettier", -- Javascript, HTML, typescript, etc.. formatter
 			},
 			automatic_installation = true,
 		})
@@ -24,6 +25,7 @@ return {
 		local sources = {
 			diagnostics.checkmake,
 			formatting.stylua,
+			formatting.prettier,
 			formatting.clang_format.with({
 				args = { "-style=file:/home/pxhoussem/Projects/pxhoussem/px-towerdef/.clang-format" },
 			}),

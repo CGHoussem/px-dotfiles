@@ -23,4 +23,5 @@ require("lazy").setup({
 	require("plugins.autoformatting"),
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
+	require("plugins.copilot"),
 })
