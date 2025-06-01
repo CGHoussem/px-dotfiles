@@ -64,7 +64,7 @@ memory {
 
 cpu_usage {
 	format = "CPU: %usage"
-	max_threshold = 85
+	max_threshold = 75
 	format_above_threshold = "CPU above threshold: %usage"
 }
 
