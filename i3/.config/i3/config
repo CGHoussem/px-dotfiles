@@ -41,7 +41,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/scripts/lock
 exec --no-startup-id nm-applet
 
 # Connect to bluetooth keyboard
-exec_always --no-startup-id ~/.config/i3/bt_keyboard.sh
+exec --no-startup-id ~/.config/i3/bt_keyboard.sh
 
 # Start picom (disabled due to HUGE lag)
 # exec --no-startup-id picom
@@ -53,7 +53,7 @@ exec_always --no-startup-id nitrogen --restore
 exec --no-startup-id redshift
 
 # Start nextcloud
-exec --no-startup-id nextcloud
+# exec --no-startup-id nextcloud
 
 # Start keepass
 exec --no-startup-id keepassxc
@@ -82,7 +82,8 @@ tiling_drag modifier titlebar
 # start a terminal
 # bindsym Mod1+Return exec i3-sensible-terminal
 # bindsym Mod1+Return exec kitty
-bindsym Mod1+Return exec urxvt
+# bindsym Mod1+Return exec urxvt
+bindsym Mod1+Return exec alacritty
 
 # Lock screen
 bindsym Mod4+l exec ~/.config/i3/scripts/lock.sh
@@ -255,8 +256,8 @@ bar {
 		focused_workspace  #499148 #327726 #FFFFFF
 		active_workspace   #333333 #222222 #FFFFFF
 		inactive_workspace #333333 #222222 #888888
-		urgent_workspace   #2F343A #BD7600 #FFFFFF
-		binding_mode       #2F343A #BD7600 #FFFFFF
+		urgent_workspace   #2F343A #FF0000 #FFFFFF
+		binding_mode       #2F343A #FF0000 #FFFFFF
 	}
 }
 

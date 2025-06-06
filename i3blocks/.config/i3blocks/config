@@ -5,6 +5,20 @@ separator_block_width=25
 command=/home/pxhoussem/.config/i3blocks/battery.sh
 interval=10
 
+[cpu_temp]
+command=/home/pxhoussem/.config/i3blocks/cpu_temp.sh
+interval=10
+label=
+markup=none
+color=#00FF00
+
+[gpu_temp]
+command=/home/pxhoussem/.config/i3blocks/gpu_temp.sh
+interval=10
+label=
+markup=none
+color=#00FF00
+
 [network]
 command=~/.config/i3blocks/network_status.sh
 interval=10
@@ -30,3 +44,8 @@ instance=fr
 TZ=Europe/Paris
 command=date +%T
 interval=5
+
+[colors]
+good=#00FF00
+degraded=#FFFF00
+bad=#FF0000
