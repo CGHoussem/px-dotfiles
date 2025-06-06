@@ -10,7 +10,7 @@ fi
 STATUS=$(cat /sys/class/net/$IFACE/operstate)
 
 if [ "$STATUS" = "up" ]; then
-    echo "Connected"
+    #echo "Connected"
     IP=$(ip -4 addr show "$IFACE" | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
     echo "Connected: $IP"
     exit 0

@@ -8,8 +8,7 @@ echo "BAT: $BAT"
 
 [ "$CHARGING_STATUS" = "Charging" ] && echo "#00CCFF" && exit 0
 
-# set urgent flag below 10% or use orange below 35%
 [ ${BAT%?} -le 10 ] && exit 33
-[ ${BAT%?} -le 35 ] && echo "#FF8000"
+[ ${BAT%?} -le 40 ] && echo "#FF8000"
 
 exit 0

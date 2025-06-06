@@ -1,8 +1,12 @@
 #!/bin/bash
 
-full_text=$(df -h /home | awk 'NR==2  {print "Home: " $3 "/" $2 " (" $5 ")"}')
-usage=$(df /home | awk 'NR==2  {gsub("%",""); print $5}')
+FULL_TEXT=$(df -h /home | awk 'NR==2  {print "Home: " $3 "/" $2 " (" $5 ")"}')
+USAGE=$(df /home | awk 'NR==2  {gsub("%",""); print $5}')
 
-echo $full_text
+echo $FULL_TEXT
+echo $FULL_TEXT
 
-[ "$usage" -gt 90 ] && exit 33 || exit 0
+[ "$USAGE" -ge 90 ] && exit 33
+[ "$USAGE" -ge 70 ] && echo "#FF8000"
+
+exit 0
