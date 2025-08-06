@@ -9,28 +9,27 @@ interval=10
 [root]
 command=/home/pxhoussem/.config/i3blocks/root_part.sh
 interval=30
-label=
 
 [home]
 command=/home/pxhoussem/.config/i3blocks/home_part.sh
 interval=30
-label=
 
 [tmp]
 command=/home/pxhoussem/.config/i3blocks/tmp_part.sh
 interval=30
-label=
+
+[memory]
+command=~/.config/i3blocks/ram.sh
+interval=10
 
 [cpu_temp]
 command=/home/pxhoussem/.config/i3blocks/cpu_temp.sh
 interval=10
-label=
 markup=none
 
 [gpu_temp]
 command=/home/pxhoussem/.config/i3blocks/gpu_temp.sh
 interval=10
-label=
 markup=none
 
 [battery]
@@ -42,4 +41,8 @@ instance=fr
 TZ=Europe/Paris
 command=date +%T
 interval=5
+color=#FFFFFF
+
+[audio]
+command=~/.config/i3blocks/audio.sh
 color=#FFFFFF

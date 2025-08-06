@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BAT=$(acpi -b | grep -E -o '[0-9][0-9]?%')
+BAT=$(acpi -b | grep -E -o '[0-9]+?%')
 CHARGING_STATUS=$(acpi -b | grep -E -o 'Discharging|Charging')
 
 echo "Battery: $BAT"
