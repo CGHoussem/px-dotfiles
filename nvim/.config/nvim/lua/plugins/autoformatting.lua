@@ -27,7 +27,7 @@ return {
 			formatting.stylua,
 			formatting.prettier,
 			formatting.clang_format.with({
-				args = { "-style=file:/home/pxhoussem/Projects/pxhoussem/px-towerdef/.clang-format" },
+				extra_args = { "--style", "file:/home/pxhoussem/.config/clang-format/.clang-format" },
 			}),
 			formatting.shfmt.with({ args = { "-i", "4" } }),
 			require("none-ls.formatting.ruff").with({ extra_args = { "--extend-select", "I" } }),
