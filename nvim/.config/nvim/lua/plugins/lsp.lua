@@ -236,11 +236,8 @@ return {
 			jsonls = {},
 			yamlls = {},
 			cmake = {},
-			clangd = {
-				cmd = { "clangd", "--offset-encoding=utf-8" },
-			},
+			clangd = {},
 			rust_analyzer = {},
-
 			lua_ls = {
 				-- cmd = { ... },
 				-- filetypes = { ... },
