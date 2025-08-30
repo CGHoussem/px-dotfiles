@@ -1,6 +1,39 @@
----
-BasedOnStyle: LLVM
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#language
+Language: C
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#columnlimit
+ColumnLimit: 110
+
+# Brace wrapping styles
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#breakbeforebraces
+BreakBeforeBraces: Attach
+
+# Alignment options
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#alignconsecutivedeclarations
+AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#alignconsecutiveassignments
+AlignConsecutiveAssignments: AcrossEmptyLinesAndComments
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#aligntrailingcomments
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 2
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#alignescapednewlines
+AlignEscapedNewlines: Left
+
+# Indentation and spacing
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#indentwidth
 IndentWidth: 4
----
-Language: CSharp
-ColumnLimit: 7
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#tabwidth
+TabWidth: 4
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#usetab
+UseTab: Never
+
+# Other formatting preferences
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#pointeralignment
+PointerAlignment: Left
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#spacebeforeparens
+SpaceBeforeParens: ControlStatements
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html#sortincludes
+SortIncludes:
+  Enabled: true
+  IgnoreCase: true
+  IgnoreExtension: true
