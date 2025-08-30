@@ -12,7 +12,7 @@ return {
 		-- Formatters & linters for mason to install
 		require("mason-null-ls").setup({
 			ensure_installed = {
-				-- "clang-format", -- c/cpp formatter
+				"clang-format", -- c/cpp formatter
 				"stylua", -- lua formatter
 				"shfmt", -- Shell formatter
 				"checkmake", -- linter for Makefiles
@@ -26,9 +26,9 @@ return {
 			diagnostics.checkmake,
 			formatting.stylua,
 			formatting.prettier,
-			-- formatting.clang_format.with({
-			-- 	extra_args = { "--style", "file:/home/pxhoussem/.config/clang-format/.clang-format" },
-			-- }),
+			formatting.clang_format.with({
+				extra_args = { "--style", "file:/home/pxhoussem/.config/clang-format/.clang-format" },
+			}),
 			formatting.shfmt.with({ args = { "-i", "4" } }),
 			require("none-ls.formatting.ruff").with({ extra_args = { "--extend-select", "I" } }),
 			require("none-ls.formatting.ruff_format"),
