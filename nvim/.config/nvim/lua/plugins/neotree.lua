@@ -53,8 +53,8 @@ return {
 				enable_diagnostics = true,
 				open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
 				open_files_using_relative_paths = false,
-				sort_case_insensitive = false,                         -- used when sorting files and directories in the tree
-				sort_function = nil,                                   -- use a custom function for sorting files and directories in the tree
+				sort_case_insensitive = false,                                  -- used when sorting files and directories in the tree
+				sort_function = nil,                                           -- use a custom function for sorting files and directories in the tree
 				-- sort_function = function (a,b)
 				--       if a.type == b.type then
 				--           return a.path > b.path
@@ -231,19 +231,20 @@ return {
 						visible = false, -- when true, they will just be displayed differently than normal items
 						hide_dotfiles = true,
 						hide_gitignored = true,
-						hide_hidden = true, -- only works on Windows for hidden files/directories
+						hide_ignored = false,
 						hide_by_name = {
-							--"node_modules"
+							"node_modules"
 						},
 						hide_by_pattern = { -- uses glob style patterns
 							--"*.meta",
 							--"*/src/*/tsconfig.json",
 						},
 						always_show = { -- remains visible even if other settings would normally hide it
-							--".gitignored",
+							".gitignored",
+							".gitignore"
 						},
 						always_show_by_pattern = { -- uses glob style patterns
-							--".env*",
+							".env*",
 						},
 						never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
 							--".DS_Store",
