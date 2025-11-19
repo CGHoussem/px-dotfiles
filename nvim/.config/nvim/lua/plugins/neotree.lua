@@ -242,10 +242,12 @@ return {
 						always_show = { -- remains visible even if other settings would normally hide it
 							".gitignored",
 							".gitignore",
-							".github"
+							".github",
+							".git/config",
 						},
 						always_show_by_pattern = { -- uses glob style patterns
 							".env*",
+							".yamllint*",
 						},
 						never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
 							--".DS_Store",
