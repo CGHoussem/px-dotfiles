@@ -252,8 +252,9 @@ bindsym $mod+r mode "resize"
 bar {
         font pango:AnonymicePro Nerd Font Mono 12
 	tray_output primary
+	status_command i3status-rs
 	#status_command i3status
-	status_command i3blocks
+	#status_command i3blocks
 	colors {
 		focused_workspace  #499148 #327726 #FFFFFF
 	}
