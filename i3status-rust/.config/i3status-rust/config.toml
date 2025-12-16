@@ -5,6 +5,12 @@ theme = "srcery"
 [theme.overrides]
 idle_bg = "#2D7729"
 idle_fg = "#FFFFFF"
+good_bg = "#2D7729"
+good_fg = { link = "idle_fg" }
+warning_bg = "#D9822B"
+warning_fg = "#FFFFFF"
+critical_bg = "#D72631"
+critical_fg = "#FFFFFF"
 
 [icons]
 icons = "awesome4"
