@@ -2,7 +2,8 @@
 size = 10.0
 
 [font.normal]
-family = "AnonymicePro Nerd Font Mono"
+#family = "AnonymicePro Nerd Font Mono"
+family = "Noto Sans Mono"
 style = "Regular"
 
 [[hints.enabled]]
@@ -20,4 +21,4 @@ enabled = true
 mods = "None"
 
 [window]
-opacity = 1.0
+opacity = 0.8

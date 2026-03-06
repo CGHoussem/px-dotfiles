@@ -49,7 +49,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id ~/.config/i3/bt_keyboard.sh
 
 # Start picom (disabled due to HUGE lag)
-# exec --no-startup-id picom
+exec --no-startup-id picom
 
 # Restore Nitrogen background
 exec_always --no-startup-id nitrogen --restore
@@ -62,6 +62,9 @@ exec --no-startup-id owncloud
 
 # Start bitwarden-desktop
 exec --no-startup-id bitwarden-desktop
+
+# Start option to change keyboard layout
+exec --no-startup-id setxkbmap -layout fr,ara -option grp:alt_shift_toggle
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -250,7 +253,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango:AnonymicePro Nerd Font Mono 10
+        font pango:AnonymicePro Nerd Font Mono 11
 	tray_output primary
 	status_command i3status-rs
 	#status_command i3status
