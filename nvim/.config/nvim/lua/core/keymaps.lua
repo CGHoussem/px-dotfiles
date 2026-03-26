@@ -43,7 +43,7 @@ vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 vim.keymap.set("n", "<leader>v", "<C-w>v", opts) -- split window vertically
 vim.keymap.set("n", "<leader>h", "<C-w>s", opts) -- split window horizontally
 vim.keymap.set("n", "<leader>se", "<C-w>=", opts) -- make split equal size
-vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close splits
+-- vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close splits
 
 -- navigate between splits (TODO: make one with arrows)
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", opts) -- split window vertically
@@ -70,5 +70,5 @@ vim.keymap.set("v", "p", '"_dP', opts)
 -- diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" }, opts)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to nerxt diagnostic message" }, opts)
-vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" }, opts)
+-- vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" }, opts)
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "OPen diagnostic list" }, opts)
