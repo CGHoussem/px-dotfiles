@@ -2,7 +2,7 @@
 
 DEVICE="6C:93:08:66:D7:32"
 MAX_ATTEMPTS=5
-SLEEEP_INTERVAL=3
+SLEEP_INTERVAL=3
 
 attempt=1
 sleep 5 # initial wait to let bluetooth stack come online
